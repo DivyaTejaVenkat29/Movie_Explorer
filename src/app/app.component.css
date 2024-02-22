@@ -1,0 +1,126 @@
+/* Default light mode styles */
+
+.container-fluid {
+  background-image: url('../Designer.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+
+  background-color: #fff; /* Fallback color in case image doesn't load */
+  color: #333;
+}
+.fa-sun{
+  color:yellow;
+}
+.fa-moon{
+  color:black;
+}
+
+.title-container-fluid {
+  position: relative;
+  display: inline-block;
+}
+
+.title {
+  color: #fff; /* Title text color */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-image: url('../Designer-1.jpeg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  color: black;
+}
+
+.dark-mode .card {
+  background-color: #444;
+  color: #fff;
+}
+
+.container-fluid {
+  padding: 20px; /* Add padding to the container */
+  background-color: #f0f0f0; /* Set background color for the container */
+}
+
+.main {
+  margin: 0 auto; /* Center the main content horizontally */
+  max-width: 800px; /* Set maximum width for the main content */
+}
+
+.movies {
+  margin-top: 20px; /* Add margin between title and movies */
+}
+
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 99; /* Ensure the toggle button is on top of other content */
+  transition: transform 0.3s ease;
+}
+
+.dark-toggle:hover {
+  transform: scale(1.1);
+}
+.carousel-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-overlay:hover .carousel-caption {
+  opacity: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  background-color: rgba(236, 44, 14, 0.895);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: blue;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
